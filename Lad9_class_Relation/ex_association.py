@@ -1,20 +1,18 @@
-from  ex_inherited import Teacher,Student
+from  ex_inherited import  Teacher,Student
 
+if __name__ == '__main__':
+        # create object
+        s1 = Student("S001", "mind", 21, "MIT", 3.50)
+        s2 = Student("S002", "Klang", 22, "AC", 3.25)
 
-if __name__ == '_main_':
-    #create object
-    s1 = Student("S001","mind",21,"MIT",3.50)
-    s2 = Student("S002","Klang",22,"AC",3.25)
+        t1 = Teacher("T001", "Fon", 40, "MT")
+        t2 = Teacher("T002", "Pong", 43, "MT")
 
-    t1 = Teacher("T001","Fon",40,"MT")
-    t2 = Teacher("T002","Pong",43,"MT")
+        s1.add_advisor(t1)
+        s1.add_advisor(t2)
 
-    s1.add_advisor(t1)
-    s1.add_advisor(t2)
+        t1.add_advisee(s1)
+        t1.add_advisee(s2)
 
-
-    t1.add_advisee(s1)
-    t1.add_advisee(s2)
-
-    s1.display_advisor()
-    t1.display_advisee()
+        s1.display_advisor()
+        t1.display_advisee()
