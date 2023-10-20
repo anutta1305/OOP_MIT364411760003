@@ -1,4 +1,4 @@
-from  model import  Student,Vaccine,Vaccine_Passport
+from Lad10.model import  Student,Vaccine,Vaccine_Passport
 
 
 
